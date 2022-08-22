@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - ENVIRONMENT=debug
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+
+  redis:
+    image: redislabs/redistimeseries
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./data:/data
