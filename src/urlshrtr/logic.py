@@ -2,16 +2,12 @@
 
 from urllib import parse
 
-from urlshrtr import error
-from urlshrtr import model
-from urlshrtr.entity import (
-    ShortUrlResponse,
-    DeleteShortUrlResponse,
-    ShortUrlStatsResponse,
-)
+from urlshrtr import error, model
+from urlshrtr.schema import (DeleteShortUrlResponse, ShortUrlResponse,
+                             ShortUrlStatsResponse)
 
 
-async def get_full_url(url_id: str) -> str:
+async def get_short_url(url_id: str) -> str:
     """Get the original URL for a short url ID.
 
     Args:

@@ -1,4 +1,5 @@
-"""Model layer"""
+"""Model layer."""
+
 import time
 from typing import Optional
 

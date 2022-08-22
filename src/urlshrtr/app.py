@@ -3,8 +3,8 @@
 from fastapi import FastAPI
 
 from urlshrtr.config import settings
-from urlshrtr.entity import HealthCheckResponse
 from urlshrtr.handlers import router
+from urlshrtr.schema import HealthCheckResponse
 
 app = FastAPI(debug=settings.debug)
 app.include_router(router)
