@@ -19,7 +19,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build docker images
-      run: docker-compose build
+    - uses: satackey/action-docker-layer-caching@v0.0.11
+      continue-on-error: true
     - name: Run tests
       run: docker-compose run test
