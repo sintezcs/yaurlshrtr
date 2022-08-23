@@ -1,6 +1,6 @@
 # URLSHRT - Yet Another URL Shortener
 
-![Build badge](https://img.shields.io/github/workflow/status/sintezcs/yaurlshrtr/Python%20application)
+[![Build badge](https://img.shields.io/github/workflow/status/sintezcs/yaurlshrtr/Python%20application)](https://github.com/sintezcs/yaurlshrtr/actions)
 
 ## Description
 Yet Another URL Shortener is a simple URL shortener service that allows you to shorten any URL you want. 
