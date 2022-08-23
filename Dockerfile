@@ -22,7 +22,7 @@ RUN poetry add gunicorn
 COPY src/ /app/
 
 # add gunicorn startup script and config file to the container
-COPY gunicorn_config.py start_gunicorn.sh run_tests.sh /app/
+COPY gunicorn_config.py start_gunicorn.sh run_tests.sh .flake8 /app/
 
 # expose port 80
 EXPOSE 80

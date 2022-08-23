@@ -2,7 +2,6 @@
 
 import os
 
-
 bind = os.getenv('GUNICORN_BIND', '0.0.0.0:80')
 
 # https://docs.gunicorn.org/en/stable/design.html#how-many-workers
