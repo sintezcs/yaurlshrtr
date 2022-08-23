@@ -1,6 +1,6 @@
 """DTO and request/response entity classes."""
 
-from dataclasses import dataclass
+from pydantic.dataclasses import dataclass
 
 from pydantic import AnyHttpUrl
 
