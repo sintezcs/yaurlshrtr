@@ -1,5 +1,7 @@
 # URLSHRT - Yet Another URL Shortener
 
+![Build badge](https://img.shields.io/github/workflow/status/sintezcs/yaurlshrtr/Python%20application)
+
 ## Description
 Yet Another URL Shortener is a simple URL shortener service that allows you to shorten any URL you want. 
 Redis is used to store the shortened URLs. Redis timeseries addon is used to keep track of the number of clicks on the shortened URL.
