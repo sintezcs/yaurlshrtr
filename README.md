@@ -35,6 +35,21 @@ to achieve the maximum reliability. And also use a clustered setup with replicas
 It will be a really expensive setup. To avoid this, we can use a database storage. For example, 
 we can use Redis as a caching layer. While the main data will be persisted in a database (e.g. PostgreSQL or MySQL) 
 
+### Application structure
+
+The application is structured as follows:
+```
+/src/tests - unit tests for the application
+/src/urlshrtr/app.py - the main application file. It also contains a healthcheck endpoint.
+/src/urlshrtr/config.py - the application configuration. It uses Pydantic Settings to manage the config values.
+/src/urlshrtr/error.py - helper functions for error handling.
+/src/urlshrtr/handlers.py - API handlers for all url shortening methods.
+/src/urlshrtr/logic.py - the business logic layer. 
+/src/urlshrtr/model.py - the application data model layer.
+/src/urlshrtr/redis_connector.py - the Redis connector.
+/src/urlshrtr/schema.py - DTOs and request/response schemas.
+/src/gunicorn_config.py - Gunicorn configuration.
+```
 
 ## Running the project locally
 
