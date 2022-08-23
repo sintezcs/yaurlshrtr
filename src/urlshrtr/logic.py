@@ -3,8 +3,11 @@
 from urllib import parse
 
 from urlshrtr import error, model
-from urlshrtr.schema import (DeleteShortUrlResponse, ShortUrlResponse,
-                             ShortUrlStatsResponse)
+from urlshrtr.schema import (
+    DeleteShortUrlResponse,
+    ShortUrlResponse,
+    ShortUrlStatsResponse,
+)
 
 
 async def get_short_url(url_id: str) -> str:
