@@ -10,8 +10,12 @@ Redis is used to store the shortened URLs. Redis timeseries addon is used to kee
 - Python 3.9
 - FastAPI
 - Redis
-- Docker
+
+Development environment:
 - Pytest
+- Flake8
+- Black
+- Docker
 
 ## Design decisions
 
@@ -69,6 +73,9 @@ Then you can view [the API docs](http://localhost/docs) and make some requests.
 
 
 ### Running the tests
+
+The project is using flake8 and black for linting and code formatting.
+This command will run the flake8 linter and the unit tests in a container.
 
 ```bash
 $ docker-compose run test
